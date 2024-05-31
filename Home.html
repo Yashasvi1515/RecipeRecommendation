@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommendation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+body { 
+  margin: 0;
+}
+.header {
+  padding: 20px 10px;
+  background-image: url(/Image/istockphoto-1307964333-612x612.jpg);
+  height: 200px;
+}
+.header a {
+  float: left;
+  background-color: #A0522D;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+}
+.header a:hover {
+  color: white;
+}
+.links {
+  float: right;
+  display: flex;
+}
+.one{
+  display: block;
+  background-color: beige;
+}
+.images1,.variety{
+  display: flex;
+}
+.images1{
+  display: flex;
+  gap:40px;
+
+  overflow: auto;
+}
+form.example input{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  color: #A0522D;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#one{
+    width: 400px;
+    height: 500px;
+}
+.content{
+  text-align: center;
+  background-color: #A0522D;
+}
+#design{
+    padding: 20px;
+    font-family: Dancing Script, 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    
+}
+        #content{
+            background-color:#A0522D;
+            color: black;
+            width: fit-content;
+            padding: 10px;
+            margin-top: -18px;
+            position: relative;
+            left:35%;
+        }   
+    a{
+        text-decoration: none;
+    }
+    #two{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+    .variety{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .variety a{
+        color: black;
+    }
+    
+    td a, li a{
+        color:black;
+    }
+    td a:hover,li a:hover{
+        color:#A0522D;
+    }
+    ul {
+        list-style: none;
+    }
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.modal {
+  margin: 8px -16px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.modal:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+.content2 {
+  background-color: white;
+  padding: 10px;
+}
+.footer ul{
+    text-align: center;
+}
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="header">
+        <div class="logo"></div>
+        <div class="links">
+            <a href="">HOME</a>
+            <a href="">RECIPES</a>
+            <a href="">SIGN IN</a>
+            <form class="example" action="">  
+                <input type="text" placeholder="Search for Recipes" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    </div> 
+</div>
+    <main>
+        <div class="content">
+        <p id="design">WHAT TO COOK TODAY</p>
+        </div>
+        <div class="one">
+        <div class="images1">
+           
+            <a href="">
+                <img src="/Image/Food1.jpg" alt="" id="one">
+                <p id="content" class="c1">QUICK AND EASY</p>
+            </a>
+            <a href="">
+                <img src="/Image/Food2.jpg" alt="" id="one">
+                <p id="content" class="c2">HEALTHY</p>
+            </a>
+            <a href="">
+                <img src="/Image/Food3.jpg" alt="" id="one">
+                <p id="content" class="c3">5 INGREDIENTS</p>
+            </a>
+            <a href="">
+                <img src="/Image/Food4.jpg" alt="" id="one">
+                <p id="content" class="c4">PASTA</p>
+            </a>
+        </div>
+        <div class="variety">
+            <a href="">
+                <img src="/Image/Food1.jpg" alt="" id="two">
+                <p>QUICK AND EASY</p>
+            </a>
+            <a href="">
+                <img src="/Image/Dinner.jpg" alt="" id="two">
+                <p>DINNER</p>
+            </a>
+            <a href="">
+                <img src="/Image/Vegetarian.jpg" alt="" id="two">
+                <p>VEGETARIAN</p>
+            </a>
+            <a href="">
+                <img src="/Image/Healthy.jpg" alt="" id="two">
+                <p>HEALTHY</p>
+            </a>
+            <a href="">
+                <img src="/Image/Instant.jpg" alt="" id="two">
+                <p>INSTANT POT</p>
+            </a>
+            <a href="">
+                <img src="/Image/Meal Prep.jpg" alt="" id="two">
+                <p>MEAL PREP</p>
+            </a>
+            
+            <a href="">
+                <img src="/Image/Salad.jpg" alt="" id="two">
+                <p>SALADS</p>
+            </a>
+        </div>
+    </div>
+     <div class="table">
+        <div class="latest">
+            <div class="box">
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+        </div>
+            <div class="box">
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+        </div>
+            <div class="box">
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+        </div>
+            <div class="box">
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+        </div>
+        </div>
+
+        <div class="Images2">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        
+        <div class="modal">
+            
+                <div class="column">
+                  <div class="content2">
+                    <img src="/Image/Meal-Prep-Pasta-with-Cauliflower.jpg" alt="" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="content2">
+                  <img src="/Image/Cauliflower-Black-Bean-Tostadas-4.jpg" alt="" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="content2">
+                  <img src="/Image/Meal Prep.jpg" alt="" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="content2">
+                  <img src="/Image/Red-Curry-Chicken-Stir-Fry-10-225x225.jpg" alt="" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                  </div>
+                </div>
+            </div>    
+    </main>
+   
+
+        <div class="footer">
+        <ul>
+            <li><strong>FOOD & RECIPES</strong></li>
+            <li><a href="">DINNER</a></li>
+            <li><a href="">MOST POPULAR RECIPES</a></li>
+            <li><a href="">DINNER</a></li>
+            <li><a href="">QUICK AND EASY</a></li>
+            <li><a href="">HEALTHY</a></li>
+            <li><a href="">VEGETARIAN</a></li>
+            <li><a href="">NON-VEGETARIAN</a></li>
+            <li><a href="">SALADS</a></li>
+        </ul>
+        <p>&copy;Copyright</p>
+    </div>
+   
+
+</div>
+</body>
+</html>
